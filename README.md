@@ -90,6 +90,6 @@ Contributions are welcome! If you have additional SF Symbols to include or ideas
 
 ## **License**
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See file [here](https://github.com/AP-94/SFSymbols/blob/main/LICENSE).
 
 ---
