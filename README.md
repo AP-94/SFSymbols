@@ -16,7 +16,7 @@ A Swift Package providing a type-safe and iterable `enum` for **SF Symbols**, si
 
 ## **Installation**
 
-### **Swift Package Manager (SPM)**
+### **Swift Package Manager SPM**
 
 1. In Xcode, go to `File > Add Packages...`.
 2. Enter the repository URL:
