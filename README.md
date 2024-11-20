@@ -16,7 +16,7 @@ A Swift Package providing a type-safe and iterable `enum` for **SF Symbols**, si
 
 ## **Installation**
 
-### **Swift Package Manager (SPM)**
+### **Swift Package Manager SPM**
 
 1. In Xcode, go to `File > Add Packages...`.
 2. Enter the repository URL:
@@ -90,6 +90,6 @@ Contributions are welcome! If you have additional SF Symbols to include or ideas
 
 ## **License**
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See file [here](https://github.com/AP-94/SFSymbols/blob/main/LICENSE).
 
 ---
