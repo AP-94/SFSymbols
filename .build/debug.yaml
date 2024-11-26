@@ -1,0 +1,47 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SFSymbols-arm64-apple-macosx15.0-debug.module": ["<SFSymbols-arm64-apple-macosx15.0-debug.module>"]
+  "main": ["<SFSymbols-arm64-apple-macosx15.0-debug.module>"]
+  "test": ["<SFSymbols-arm64-apple-macosx15.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/alessandropace/Documents/Repositories/SFSymbols/Sources/SFSymbols/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/alessandropace/Documents/Repositories/SFSymbols/Sources/SFSymbols/Image+SFSymbol.swift","/Users/alessandropace/Documents/Repositories/SFSymbols/Sources/SFSymbols/SFSymbolEnum.swift"]
+    outputs: ["/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/sources"]
+    description: "Write auxiliary file /Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/sources"
+
+  "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<SFSymbols-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/Image+SFSymbol.swift.o","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/SFSymbolEnum.swift.o","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/Modules/SFSymbols.swiftmodule"]
+    outputs: ["<SFSymbols-arm64-apple-macosx15.0-debug.module>"]
+
+  "C.SFSymbols-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/alessandropace/Documents/Repositories/SFSymbols/Sources/SFSymbols/Image+SFSymbol.swift","/Users/alessandropace/Documents/Repositories/SFSymbols/Sources/SFSymbols/SFSymbolEnum.swift","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/sources"]
+    outputs: ["/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/Image+SFSymbol.swift.o","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/SFSymbolEnum.swift.o","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/Modules/SFSymbols.swiftmodule"]
+    description: "Compiling Swift Module 'SFSymbols' (2 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","SFSymbols","-emit-dependencies","-emit-module","-emit-module-path","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/Modules/SFSymbols.swiftmodule","-output-file-map","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/sources","-I","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx15.0","-enable-batch-mode","-index-store-path","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/SFSymbols-Swift.h","-color-diagnostics","-swift-version","6","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","sfsymbols"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/alessandropace/Documents/Repositories/SFSymbols/Sources/SFSymbols/","/Users/alessandropace/Documents/Repositories/SFSymbols/Package.swift","/Users/alessandropace/Documents/Repositories/SFSymbols/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

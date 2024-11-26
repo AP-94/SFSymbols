@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/master.swiftdeps"
+  },
+  "/Users/alessandropace/Documents/Repositories/SFSymbols/Sources/SFSymbols/Image+SFSymbol.swift": {
+    "dependencies": "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/Image+SFSymbol.d",
+    "object": "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/Image+SFSymbol.swift.o",
+    "swiftmodule": "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/Image+SFSymbol~partial.swiftmodule",
+    "swift-dependencies": "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/Image+SFSymbol.swiftdeps"
+  },
+  "/Users/alessandropace/Documents/Repositories/SFSymbols/Sources/SFSymbols/SFSymbolEnum.swift": {
+    "dependencies": "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/SFSymbolEnum.d",
+    "object": "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/SFSymbolEnum.swift.o",
+    "swiftmodule": "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/SFSymbolEnum~partial.swiftmodule",
+    "swift-dependencies": "/Users/alessandropace/Documents/Repositories/SFSymbols/.build/arm64-apple-macosx/debug/SFSymbols.build/SFSymbolEnum.swiftdeps"
+  }
+}
