@@ -82,6 +82,7 @@ public enum SFSymbol: String, CaseIterable {
     case houseFill = "house.fill"
     case heartTextSquare = "heart.text.square"
     case heart
+    case horn
     
     // MARK Symbols - I
     case infoCircleFill = "info.circle.fill"
@@ -103,6 +104,7 @@ public enum SFSymbol: String, CaseIterable {
     
     // MARK Symbols - L
     case lockFill = "lock.fill"
+    case lockShield = "lock.shield"
     case lockCircleFill = "lock.circle.fill"
     case lightBulb = "lightbulb"
     case lightMax = "light.max"
@@ -120,10 +122,13 @@ public enum SFSymbol: String, CaseIterable {
     case square = "square"
     case suitHeartFill = "suit.heart.fill"
     case studentDesk = "studentdesk"
+    case starBubbleFill = "star.bubble.fill"
     case squareStack3dDownRightFill = "square.stack.3d.down.right.fill"
     
     // MARK Symbols - T
     case tShirtFill = "tshirt.fill"
+    case textPage = "text.page"
+    case trashSquareFill = "trash.square.fill"
     case trash
     case tray
     case ticket
@@ -142,6 +147,7 @@ public enum SFSymbol: String, CaseIterable {
     case playTv = "play.tv"
     case paintbrushPointedFill = "paintbrush.pointed.fill"
     case personThreeSequenceFill = "person.3.sequence.fill"
+    case plusArrowTriangleheadClockwise = "plus.arrow.trianglehead.clockwise"
     
     // MARK Symbols - W
     case wrenchAndScrewdriver = "wrench.and.screwdriver"
