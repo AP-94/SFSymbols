@@ -149,6 +149,7 @@ public enum SFSymbol: String, CaseIterable {
     case paintbrushPointedFill = "paintbrush.pointed.fill"
     case personThreeSequenceFill = "person.3.sequence.fill"
     case plusArrowTriangleheadClockwise = "plus.arrow.trianglehead.clockwise"
+    case personWave2Fill = "person.wave.2.fill"
     
     // MARK Symbols - W
     case wrenchAndScrewdriver = "wrench.and.screwdriver"
