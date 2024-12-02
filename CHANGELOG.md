@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/AP-94/SFSymbols/compare/v1.0.0...v1.1.0) (2024-12-02)
+
+
+### Features
+
+* Added person.wave.2.fill symbol ([22ce53c](https://github.com/AP-94/SFSymbols/commit/22ce53c4edc2039890272a1ab7a226505408cc68))
+
 # 1.0.0 (2024-12-02)
 
 
