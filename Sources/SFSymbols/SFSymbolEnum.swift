@@ -73,6 +73,7 @@ public enum SFSymbol: String, CaseIterable {
     
     // MARK Symbols - G
     case gear = "gear"
+    case globe = "globe"
     case gearShapefill = "gearshape.fill"
     case gameController = "gamecontroller"
     
