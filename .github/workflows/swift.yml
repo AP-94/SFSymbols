@@ -8,28 +8,39 @@ on:
     branches:
       - main
 
+permissions:  # Add this permissions block
+  contents: write
+  issues: write
+  pull-requests: write
+  
 jobs:
   release:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'  # Updated to Node.js 18
 
-      # Step 3: Install Semantic Release and plugins
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install dependencies
-        run: npm install semantic-release @semantic-release/changelog @semantic-release/github @semantic-release/git
+        run: |
+          npm install -g semantic-release @semantic-release/changelog @semantic-release/github @semantic-release/git
+          npm init -y
+          npm install
 
-      # Step 4: Run Semantic Release
       - name: Run Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
-
