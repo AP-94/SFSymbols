@@ -11,6 +11,7 @@ public enum SFSymbol: String, CaseIterable {
     case arrowTriangleDownFill = "arrowtriangle.down.fill"
     case arrowRight = "arrow.right"
     case arrowShapeRight = "arrowshape.right.fill"
+    case arrowUpRight = "arrow.up.right"
     
     // MARK Symbols - B
     case bankNoteFill = "banknote.fill"
