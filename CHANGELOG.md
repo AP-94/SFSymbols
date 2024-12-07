@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/AP-94/SFSymbols/compare/v1.1.0...v1.2.0) (2024-12-07)
+
+
+### Features
+
+* Added arrow.up.right symbol ([db409d1](https://github.com/AP-94/SFSymbols/commit/db409d19b96ee9616cccd33b79d0e547e2e7e791))
+
 # [1.1.0](https://github.com/AP-94/SFSymbols/compare/v1.0.0...v1.1.0) (2024-12-02)
 
 
