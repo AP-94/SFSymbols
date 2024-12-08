@@ -5,6 +5,7 @@ public enum SFSymbol: String, CaseIterable {
     
     // MARK Symbols - A
     case appFill = "app.fill"
+    case appDashed = "app.dashed"
     case archiveBoxFill = "archivebox.fill"
     case arrowTriangleTwoCirclePathCircle = "arrow.triangle.2.circlepath.circle"
     case arrowTriangleUpFill = "arrowtriangle.up.fill"
@@ -52,6 +53,7 @@ public enum SFSymbol: String, CaseIterable {
     // MARK Symbols - D
     case dollarSignCircle = "dollarsign.circle"
     case dollarSignCircleFill = "dollarsign.circle.fill"
+    case ollarsignArrowCirclepath = "dollarsign.arrow.circlepath"
     
     // MARK Symbols - E
     case envelopeFill = "envelope.fill"
@@ -110,6 +112,7 @@ public enum SFSymbol: String, CaseIterable {
     case lockCircleFill = "lock.circle.fill"
     case lightBulb = "lightbulb"
     case lightMax = "light.max"
+    case line3HorizontalDecreaseCircle = "line.3.horizontal.decrease.circle"
     
     // MARK Symbols - R
     case repeatArrows = "repeat"
@@ -126,6 +129,7 @@ public enum SFSymbol: String, CaseIterable {
     case studentDesk = "studentdesk"
     case starBubbleFill = "star.bubble.fill"
     case squareStack3dDownRightFill = "square.stack.3d.down.right.fill"
+    case squareAndArrowDown = "square.and.arrow.down"
     
     // MARK Symbols - T
     case tShirtFill = "tshirt.fill"
@@ -151,6 +155,7 @@ public enum SFSymbol: String, CaseIterable {
     case personThreeSequenceFill = "person.3.sequence.fill"
     case plusArrowTriangleheadClockwise = "plus.arrow.trianglehead.clockwise"
     case personWave2Fill = "person.wave.2.fill"
+    case plusminusCircleFill = "plusminus.circle.fill"
     
     // MARK Symbols - W
     case wrenchAndScrewdriver = "wrench.and.screwdriver"
