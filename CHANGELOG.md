@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/AP-94/SFSymbols/compare/v1.2.0...v1.3.0) (2024-12-08)
+
+
+### Features
+
+* New symbols added ([078532e](https://github.com/AP-94/SFSymbols/commit/078532e04f5f1e93762c3087b34fb7ad595bc352))
+
 # [1.2.0](https://github.com/AP-94/SFSymbols/compare/v1.1.0...v1.2.0) (2024-12-07)
 
 
